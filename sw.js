@@ -6,7 +6,8 @@ self.addEventListener('install', (event) => {
         caches.open('pomodoro-timer').then((cache) => {
             return cache.addAll([
                 '/',
-                '/index.html'
+                '/index.html',
+                '/index.js'
             ]);
         })
     );
